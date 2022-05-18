@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Samantha Bishop UI Designer</title>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Handlee&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
 
 
   <body>
     <main>
-      <header>
-<img src="img/Logo.png" alt="Logo Signature">
+      <header id="quicknav">
+      <img src="img/SBishop.svg" alt="Logo Signature">
         <div>
           <nav>
               <ul>
@@ -25,15 +32,16 @@
 
 
       <!--begin hero section-->
-      <div>
+      <div id="hero">
+        <div>
 
           <div>
             <h1>Hi, I'm Samantha Bishop!</h1>
           </div>
 
-          <span>I'm a UI designer with a passion for solving problems creatively</span>
+          <span>I'm a UI designer with a passion for solving problems creatively.</span>
 
-      </div>
+        </div>
 
 
       <!--begin work and projects section-->
@@ -43,7 +51,7 @@
         <div><h2>My Work</h2></div>
 
 
-        <div> <!--container for image and description of project 1-->
+        <div id="project1"> <!--container for image and description of project 1-->
 
           <div>
             <picture>
@@ -59,7 +67,7 @@
               Over the course of one month, I created the brand guidelines, made low-fidelity wireframes, mapped out a user flow diagram, gathered feedback on a mid-fidelity prototype, and designed the UI for mobile, tablet, and desktop screens.
             </p>
 
-          <a href="Evermore.html">View Evermore</a>
+          <a href="Evermore.html" class="button">View More</a>
 
             <!--<button type="button" name="View Project">View Evermore</button>-->
             <br><br><br></br></br></br>
@@ -67,7 +75,7 @@
 
       </div>
 
-      <div> <!--container for image and description of project 2-->
+      <div id="project2"> <!--container for image and description of project 2-->
 
         <div>
 
@@ -85,7 +93,7 @@
             </p>
             <!--<button type="button" name="View Project">View Serentripity</button>-->
 
-            <a href="linktoSerentripity">View Serentripity</a>
+            <a href="#" class="button">View More</a>
 
             <br><br><br></br></br></br>
       </div>
@@ -94,15 +102,16 @@
 
     </div><!--end of work and projects section-->
 
+  </div> <!--end of hero-->
+
       <footer id="contact">
 
         <div>
-            <h2>Get in Touch</h2>
+            <h1>Get in Touch</h1>
         </div>
 
         <div>
-          <p>Interested in working together? Feel free to contact me on <a href="skype:samanthaaa.k.allen"> Skype</a> or <a href="mailto:skallen@smu.edu">send me an email</a>.<br>
-            I look forward to hearing from you!</p>
+          <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button secondary">Email Me</a></p>
         </div>
 
         <div>

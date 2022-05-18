@@ -1,0 +1,142 @@
+/*
+Colors used:
+Background (Cream): #FBF7EE
+Accent 1 (Greenish Teal): #3F796B
+Accent 2 (Orange): #77553E
+Accent 3 (Dark Teal): #385B60
+Primary (Teal): #1F6C74
+Primary (Black): #000000
+
+Type:
+Body: Quicksand 18px
+Header 1: Handlee 24px font-family: 'Handlee', cursive
+Header 2: Handlee 20px
+Signature and logo: Give You Glory 24px font-family: 'Give You Glory', cursive
+*/
+
+
+body {
+  background-color: #FBF7EE;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+}
+
+h1, h2 {
+  line-height: 1.4;
+  font-family: 'Give You Glory', cursive;
+}
+
+h3, h4 {
+  line-height: 1.4;
+  font-family: 'Handlee', cursive;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.35em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #77553E;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #385B60;
+}
+
+a:hover,
+a:focus {
+  color: #35796b;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1F6C74;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FBF7EE;
+  color: #77553E;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #77553E;
+  transition: 0.2s opacity;
+  /*font-family: 'Handlee', cursive;
+  text-transform: uppercase;*/
+}
+
+.button:visited {
+  color: #385B60;
+  border-style: solid;
+  border-color: #385B60;
+}
+
+.button:hover,
+.button:focus {
+  color: #35796b;
+  border-style: solid;
+  border-color: #35796b;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.button:active {
+  color: #1F6C74;
+  border-style: solid;
+  border-color: #1F6C74;
+}
+
+.button.secondary {
+  background-color: #77553e;
+  font-weight: 600;
+  color: #FBF7EE;
+  text-transform: uppercase;
+  border: 2px solid #77553E;
+}
+
+.button.secondary:visited {
+  color: #FBF7EE;
+  background-color: #385B60;
+  border-style: solid;
+  border-color: #385B60;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: #35796b;
+  color: #FBF7EE;
+  border-style: solid;
+  border-color: #35796b;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.button.secondary:active {
+  background-color: #1F6C74;
+  color: #FBF7EE;
+  border-style: solid;
+  border-color: #1F6C74;
+}
