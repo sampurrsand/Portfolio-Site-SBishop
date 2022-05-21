@@ -6,6 +6,7 @@ Accent 2 (Orange): #77553E
 Accent 3 (Dark Teal): #385B60
 Primary (Teal): #1F6C74
 Primary (Black): #000000
+Light cream: #FEFCF8
 
 Type:
 Body: Quicksand 18px
@@ -14,9 +15,15 @@ Header 2: Handlee 20px
 Signature and logo: Give You Glory 24px font-family: 'Give You Glory', cursive
 */
 
+/*box width needs to go before the body selector*/
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
-  background-color: #FBF7EE;
+  background-color: #FEFCF8;
   font-family: 'Quicksand', sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -25,12 +32,12 @@ body {
 }
 
 h1, h2 {
-  line-height: 1.4;
+  line-height: 0.5;
   font-family: 'Give You Glory', cursive;
 }
 
 h3, h4 {
-  line-height: 1.4;
+  line-height: 0.25;
   font-family: 'Handlee', cursive;
   font-weight: 500;
 }
@@ -76,10 +83,12 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #FBF7EE;
+  background-color: #FEFCF8;
   color: #77553E;
   font-weight: 600;
   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 3px;
   border-style: solid;
   border-color: #77553E;
@@ -139,4 +148,133 @@ a:active {
   color: #FBF7EE;
   border-style: solid;
   border-color: #1F6C74;
+}
+
+header {
+  background-color: #385b60;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid none;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px; /*left and right padding*/
+}
+
+.center {
+text-align: center;
+}
+
+.row {
+  margin: 25px 0; /*25px top and bottom, 0 left and right*/
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#story .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#tools .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#hero h1 {
+  text-align: center;
+} /*makes just the h1 in hero sections center*/
+
+/*alternatively, can create a rule set with a selector for center and add the center class to any HTML elements you want centered*/
+
+#hero {
+  background-color: #FEFCF8;
+  padding: 20px 0; /*add space to top and bottom of hero section to give its content some space*/
+  display: inline-block;
+  width: 100%; /*recommended method that ensures margins of every element in hero will not affect elements outside of it - always add width of 100%*/
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+} /*only selects unordered lists within the nav element to remove the bullets*/
+
+nav > ul > li {
+  display: inline-block;
+} /*this makes the list items show up next to each other*/
+
+nav > ul > li > a {
+  padding: 0 15px; /*left and right padding*/
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FEFCF8;
+  /*font-family: 'Handlee', cursive;*/
+  /*choosing not to set a color here because I want nav links to inherit from a*/
+}
+
+nav > ul > li > a:visited {
+  color: #FFE1BE;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #C8FFF4;
+  text-transform: underline;
+  opacity: 0.8;
+}
+
+nav > ul > li > a:active {
+  color: #FBF7EE;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#ux > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ui > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tools > ul {
+list-style-type: none;
+padding: 0;
+}
+
+/*in order to get these to show up next to each other, should I nest them in a list?*/
+
+main {
+  padding-top: 133px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

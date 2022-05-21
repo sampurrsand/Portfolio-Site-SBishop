@@ -14,77 +14,71 @@
 
 
   <body>
-    <main>
-      <header id="quicknav">
-      <img src="img/SBishop.svg" alt="Logo Signature">
-        <div>
-          <nav>
-              <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="SBishop Resume.pdf" target="_blank">Download my CV</a></li>
-              </ul>
-          </nav>
-        </div>
+    <header id="quicknav">
+      <div class="container">
+        <img src="img/SBishop.svg" alt="Logo Signature" class="logo">
+        <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="SBishop Resume.pdf" target="_blank">Download my CV</a></li>
+            </ul>
+        </nav>
+      </div>
 
-      </header>
+    </header>
+    <main>
 
 
       <!--begin hero section-->
       <div id="hero">
-        <div>
+        <div class="center">
 
-          <div>
             <h1>Hi, I'm Samantha Bishop!</h1>
-          </div>
 
           <span>I'm a UI designer with a passion for solving problems creatively.</span>
-
         </div>
 
 
       <!--begin work and projects section-->
 
-      <div>
+      <div id="work">
 
-        <div><h2>My Work</h2></div>
+        <div class="container">
+          <h2>My Work</h2>
 
+          <div class="row">
+            <div id="project1"> <!--container for image and description of project 1-->
 
-        <div id="project1"> <!--container for image and description of project 1-->
+                <picture>
+                  <source srcset="img/Evermore Assets/Responsive Mockups - Project Home/Evermore@1x.png" media="(max-width:767px)">
+                    <img src="img/Evermore Assets/Responsive Mockups - Project Home/Evermore@2X.png" alt="Evermore Project">
+                </picture>
 
-          <div>
-            <picture>
-              <source srcset="img/Evermore Assets/Responsive Mockups - Project Home/Evermore@1x.png" media="(max-width:767px)">
-              <img src="img/Evermore Assets/Responsive Mockups - Project Home/Evermore@2X.png" alt="Evermore Project">
-            </picture>
+              <div>
+                <h3>Evermore</h3>
+                <p>Evermore is a responsive web app for an online storefront that sells wedding supplies. <br>
+                  Over the course of one month, I created the brand guidelines, made low-fidelity wireframes, mapped out a user flow diagram, gathered feedback on a mid-fidelity prototype, and designed the UI for mobile, tablet, and desktop screens.
+                </p>
 
-          </div>
-
-          <div>
-            <h3>Evermore</h3>
-            <p>Evermore is a responsive web app for an online storefront that sells wedding supplies. <br>
-              Over the course of one month, I created the brand guidelines, made low-fidelity wireframes, mapped out a user flow diagram, gathered feedback on a mid-fidelity prototype, and designed the UI for mobile, tablet, and desktop screens.
-            </p>
-
-          <a href="Evermore.html" class="button">View More</a>
-
-            <!--<button type="button" name="View Project">View Evermore</button>-->
-            <br><br><br></br></br></br>
+                <a href="Evermore.html" class="button secondary">View Case Study</a>
+              </div>
             </div>
+          </div> <!--end row-->
 
       </div>
 
       <div id="project2"> <!--container for image and description of project 2-->
 
-        <div>
+        <div class="container">
+
+        <div class="row">
 
           <picture>
             <source srcset="img/Serentripity Assets/Mobile Mockups - Project Home/Serentripity@0.5x.png" media="(max-width:767px)">
             <img src="img/Serentripity Assets/Mobile Mockups - Project Home/Serentripity@1x.png" alt="Serentripity Project">
           </picture>
-
-        </div>
 
         <div>
             <h3>Serentripity</h3>
@@ -93,25 +87,27 @@
             </p>
             <!--<button type="button" name="View Project">View Serentripity</button>-->
 
-            <a href="#" class="button">View More</a>
+            <a href="#" class="button secondary">View Case Study</a>
 
-            <br><br><br></br></br></br>
       </div>
 
     </div> <!--end of project 2-->
+  </div>
+
 
     </div><!--end of work and projects section-->
-
+  </div>
+</div>
   </div> <!--end of hero-->
 
       <footer id="contact">
-
+        <div class="center">
         <div>
             <h1>Get in Touch</h1>
         </div>
 
         <div>
-          <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button secondary">Email Me</a></p>
+          <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button">Email Me</a></p>
         </div>
 
         <div>
@@ -141,6 +137,8 @@
         <div>
           <p>Copyright Samantha Bishop 2022</p>
         </div>
+
+      </div>
 
       </footer>
     </main>

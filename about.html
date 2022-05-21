@@ -13,36 +13,32 @@
   </head>
 
   <body>
+    <header id="quicknav">
+      <div class="container">
+        <img src="img/Sbishop.svg" alt="Logo Signature" class="logo">
+        <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="SBishop Resume.pdf" target="_blank">Download my CV</a></li>
+            </ul>
+        </nav>
+      </div>
 
+    </header>
     <main>
 
-      <header id="quicknav">
-      <img src="img/Sbishop.svg" alt="Logo Signature">
-        <div>
-          <nav>
-              <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="SBishop Resume.pdf" target="_blank">Download my CV</a></li>
-              </ul>
-          </nav>
-        </div>
 
-      </header>
 
 
 
       <!--About-->
-      <div id="About">
+      <div id="hero">
 
-      <div> <!--container for About section-->
+      <div class="center"> <!--container for About section-->
 
-          <div>
             <h1>About Me</h1>
-          </div>
-
-      </div>
 
 
       <!--begin hero section-->
@@ -52,12 +48,12 @@
           <img src="img/Profile@1x.jpg" alt="Profile Picture">
         </picture>
 
-        <div> <!--both columns-->
+        <div id="story"> <!--both columns-->
 
         <div><h2>My Story</h2></div>
 
 
-        <div> <!--left column-->
+        <div class="row"> <!--left column-->
 
           <div> <!--STORY-->
             <p>My name is Samantha, and I’m a UI designer based in Texas. I graduated from Southern Methodist University with a degree in management science. My background in optimization, project management, and engineering has given me the ability to understand many different perspectives and adapt my solutions accordingly. I started my career in software asset management, where I was largely focused on automating, improving, and designing processes using tools such as SQL and Visual Basic. After designing several PowerPoints for my team, I realized I wanted to pursue a creative field and stumbled upon UI design. </p>
@@ -66,17 +62,18 @@
 
           </div>
 
-          <div><a href="SBishop Resume.pdf" target="_blank" class="button secondary">Download my resume</a></div>
+          <div><a href="SBishop Resume.pdf" target="_blank" class="button secondary">Download Resume</a></div>
 
         </div>
 
-        <div> <!--right column-->
+        <div class="row"> <!--right column-->
 
-          <div><h2>Skills & Tools</h2></div>
+          <h2>Skills & Tools</h2>
 
-          <div>
-            <h3>Relevant Skills</h3>
-            <h4>UX Skills</h4>
+          <div id="skills">
+
+            <div id="ux" class="column">
+            <h3>UX Skills</h3>
             <ul>
               <li>Design thinking process</li>
               <li>Research learning spiral</li>
@@ -84,10 +81,13 @@
               <li>User stories</li>
               <li>User flow diagrams</li>
               <li>Rapid prototyping</li>
-              <li>SWOT & UX analyes</li>
+              <li>SWOT & UX analyses</li>
             </ul>
+          </div>
 
-            <h4>UI Skills</h4>
+          <div id ="ui" class="column">
+
+            <h3>UI Skills</h3>
             <ul>
               <li>Responsive design</li>
               <li>Layouts & grids</li>
@@ -102,8 +102,10 @@
             </ul>
 
           </div>
+        </div>
 
-          <div>
+
+          <div id="tools" class="column">
             <h3>Tools I use</h3>
             <ul>
               <li>Adobe XD</li>
@@ -120,15 +122,18 @@
       </div>
 
     </div>
+  </div>
 
       <footer id="contact">
 
+        <div class="center">
+
         <div>
-            <h2>Get in Touch</h2>
+            <h1>Get in Touch</h1>
         </div>
 
         <div>
-          <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button secondary">Email Me</a></p>
+          <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button">Email Me</a></p>
         </div>
 
         <div>
@@ -158,6 +163,7 @@
         <div>
           <p>Copyright Samantha Bishop 2022</p>
         </div>
+      </div>
 
       </footer>
     </main>
