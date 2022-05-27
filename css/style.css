@@ -25,7 +25,7 @@ Signature and logo: Give You Glory 24px font-family: 'Give You Glory', cursive
 body {
   background-color: #FEFCF8;
   font-family: 'Quicksand', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
@@ -55,7 +55,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.1em;
+  margin:auto;
 }
 
 img {
@@ -124,6 +125,7 @@ a:active {
   color: #FBF7EE;
   text-transform: uppercase;
   border: 2px solid #77553E;
+  transition: 0.2s opacity;
 }
 
 .button.secondary:visited {
@@ -172,6 +174,10 @@ header {
 text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .row {
   margin: 25px 0; /*25px top and bottom, 0 left and right*/
 }
@@ -187,6 +193,16 @@ text-align: center;
 }
 
 #tools .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#hero .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#skills .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #000000;
 }
@@ -247,34 +263,297 @@ nav {
   width: 100%;
 }
 
-#ux > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#ui > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#tools > ul {
-list-style-type: none;
-padding: 0;
-}
-
 /*in order to get these to show up next to each other, should I nest them in a list?*/
 
 main {
-  padding-top: 133px;
+  padding-top: 99px;
 }
 
-.column {
+#about {
+  text-align: center;
+}
+
+#skills .row {
+  text-align: center;
+}
+
+#uiux > ul > li {
+  list-style-type: none;
+}
+
+#uiux > ul {
+  padding-left: 0;
+}
+
+#tools > ul > li {
+  list-style-type: none;
+}
+
+#tools ul {
+  padding-left: 0px;
+}
+
+#linkedin, #instagram, #behance {
+  width: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+#contact .row {
+  border-bottom: unset;
+}
+
+.col-33 {
+  width: 33%;
   float: left;
-  width: 33.33%;
 }
 
+
+/*not having this will make elements overlap*/
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+
+.cat {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#svg5759 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+/*create css rule for the sun and reference keyframes for color-change*/
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes brow-up-down {
+  0% {transform: translate(725.5px, 477.5px);}
+  50% {transform: translate(725.5px, 462px);}
+  100% {transform: translate(725.5px, 477.5px);}
+}
+
+.brow1 {
+  animation-duration: 2s;
+  animation-name: brow-up-down;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+
+}
+
+@keyframes fade-in-out {
+0% {opacity: 0;}
+50% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+.dtx {
+  animation-duration: 3s;
+  animation-name: fade-in-out;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+    @media only screen and (min-width: 640px) {
+      /*tells browser that when screen is 640px and above it needs to use this styling*/
+      header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+
+      nav {
+        width: auto; /*won't take up full screen, only as wide as its content*/
+        float: right; /*this ensures that nav floats to the right of the logo*/
+        margin-top: 4px;
+      }
+
+      body {
+        font-size: 18px;
+        /*the font size for headers will update automatically bc of em values*/
+      }
+
+      #hero span {
+        display: block;
+      }
+
+      .col-md-6 {
+        width: 50%;
+      }
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+      header {
+        text-align: unset;
+        padding: 20px 0 13px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+      }
+
+      .col-lg-7 {
+        width: 60%;
+        float: left;
+      }
+
+      .col-lg-5 {
+        width: 40%;
+        float: left;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #contact .container {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #story .row {
+        border-bottom: unset;
+        padding-bottom: 0px;
+      }
+
+      #skills .row {
+        border-bottom: unset;
+        padding-bottom: 0px;
+      }
+
+      #tools .row {
+        border-bottom: unset;
+        padding-bottom: 0px;
+      }
+
+      body {
+        font-size: 20px;
+      }
+
+      .row {
+        margin-bottom: 0px;
+      }
+
+    }
+
+    @media only screen and (min-width: 1441px) {
+
+      header {
+        text-align: unset;
+        padding: 20px 0 13px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+      }
+
+      .col-xl-7 {
+        width: 60%;
+      float: left;
+      }
+
+      .col-xl-5 {
+        width: 40%
+        float: left;
+      }
+
+      .col-xl-6 {
+        width: 60%;
+        float: left;
+      }
+
+      .col-xl-3 {
+        width: 20%;
+        float: left;
+      }
+
+      .container {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #contact .container {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #story .row {
+        border-bottom: unset;
+        padding-bottom: 0px;
+      }
+
+      #skills .row {
+        border-bottom: unset;
+        padding-bottom: 0px;
+      }
+
+      #tools .row {
+        border-bottom: unset;
+        padding-bottom: 0px;
+      }
+
+      body {
+        font-size: 20px;
+      }
+
+      .row {
+        margin-bottom: 0px;
+      }
+
+    }
+
+
+[class*="col-"] {
+  float:left; /*columns show up next to each other*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*
+[id*="g"] {
+  transform-origin: left;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}*/
