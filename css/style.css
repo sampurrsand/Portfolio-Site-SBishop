@@ -21,7 +21,6 @@ Signature and logo: Give You Glory 24px font-family: 'Give You Glory', cursive
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #FEFCF8;
   font-family: 'Quicksand', sans-serif;
@@ -32,12 +31,12 @@ body {
 }
 
 h1, h2 {
-  line-height: 0.5;
+  line-height: 1em;
   font-family: 'Give You Glory', cursive;
 }
 
 h3, h4 {
-  line-height: 0.25;
+  line-height: 1em;
   font-family: 'Handlee', cursive;
   font-weight: 500;
 }
@@ -154,11 +153,10 @@ a:active {
 
 header {
   background-color: #385b60;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid none;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
+  margin: 0;
+  /*text-align: center; removed to make sure logo shows up to the left*/
+  /*padding: auto;*/
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
@@ -222,17 +220,14 @@ text-align: center;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 } /*only selects unordered lists within the nav element to remove the bullets*/
-
-nav > ul > li {
-  display: inline-block;
-} /*this makes the list items show up next to each other*/
 
 nav > ul > li > a {
   padding: 0 15px; /*left and right padding*/
@@ -258,15 +253,15 @@ nav > ul > li > a:active {
   color: #FBF7EE;
 }
 
-nav {
+
+/*delete this to remove blank space under the logo and menu*/
+/*nav {
   display: inline-block;
   width: 100%;
-}
-
-/*in order to get these to show up next to each other, should I nest them in a list?*/
+}*/
 
 main {
-  padding-top: 99px;
+  padding-top: 56px;
 }
 
 #about {
@@ -322,75 +317,60 @@ main {
   height: auto;
 }
 
-#svg5759 {
+/*display all elements except the last one*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li:last-child {
+  padding: 0 0 10px;
+}
+
+/*the .responsive is for javascript later*/
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-right: 0;
+}
+
+
+/*this will override the previous code and show the complete menu*/
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+a.icon {
+  padding: 0;
+}
+
+.logo, #menuIcon {
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-xs-1 {
+  float: left;
   width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+.fadeIn {
+  opacity:0;
 }
 
-/*create css rule for the sun and reference keyframes for color-change*/
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 
-@keyframes cloud-move {
-  from {transform: translate(0, 50px);}
-  to {transform: translate(200px, 50px);}
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px, 48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-@keyframes brow-up-down {
-  0% {transform: translate(725.5px, 477.5px);}
-  50% {transform: translate(725.5px, 462px);}
-  100% {transform: translate(725.5px, 477.5px);}
-}
-
-.brow1 {
-  animation-duration: 2s;
-  animation-name: brow-up-down;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-timing-function: linear;
-
-}
-
-@keyframes fade-in-out {
-0% {opacity: 0;}
-50% {opacity: 1;}
-100% {opacity: 0;}
-}
-
-.dtx {
-  animation-duration: 3s;
-  animation-name: fade-in-out;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
     @media only screen and (min-width: 640px) {
       /*tells browser that when screen is 640px and above it needs to use this styling*/
       header {
@@ -413,9 +393,51 @@ main {
         display: block;
       }
 
+      #story .row {
+        border-bottom: unset;
+        padding: 0;
+      }
+
+      #about .row {
+        border-bottom: unset;
+        padding: 0;
+      }
+
       .col-md-6 {
         width: 50%;
       }
+
+      .logo {
+        max-width: 250px;
+
+      }
+
+      nav > ul > li {
+        display: inline-block;
+      } /*this makes the list items show up next to each other; we moved it here because we don't want small screens to have these show up side by side*/
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      nav > ul {
+        list-style-type: none;
+        /*padding: 0;*/
+        margin: 1em 0; /*still want margins*/
+      }
+
+      .logo, nav {
+        vertical-align: middle;
+      }
+
+      main {
+        padding-top: 96px;
+      }
+
 
     }
 
@@ -472,6 +494,36 @@ main {
 
       .row {
         margin-bottom: 0px;
+      }
+
+      .logo {
+        max-width: 250px;
+      }
+
+      nav > ul > li {
+        display: inline-block;
+      } /*this makes the list items show up next to each other*/
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      nav > ul {
+        list-style-type: none;
+        /*padding: 0;*/
+        margin: 1em 0; /*still want margins*/
+      }
+
+      .logo, nav {
+        vertical-align: middle;
+      }
+
+      main {
+        padding-top: 96px;
       }
 
     }
@@ -541,19 +593,37 @@ main {
         margin-bottom: 0px;
       }
 
-    }
+      .logo {
+        max-width: 250px;
+      }
 
+      nav > ul > li {
+        display: inline-block;
+      } /*this makes the list items show up next to each other*/
+
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      nav > ul {
+        list-style-type: none;
+        /*padding: 0;*/
+        margin: 1em 0; /*still want margins*/
+      }
+
+      main {
+        padding-top: 96px;
+      }
+
+    }
 
 [class*="col-"] {
   float:left; /*columns show up next to each other*/
   padding-left: 10px;
   padding-right: 10px;
 }
-
-/*
-[id*="g"] {
-  transform-origin: left;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}*/
