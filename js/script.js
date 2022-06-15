@@ -13,13 +13,13 @@ function menuToggle () {
     x.className = 'navtoggle'; //this will hide the menu
 }
 
-
+/* need to debug this because it's behaving strangely
 $(document).ready(function(){
       $(".fade").css('display','none');
     //$(".fade").fadeIn(500);
       $(".fade").fadeTo(2000, 1);
 });
 
-
+*/
 //rounded box
 //<script type="text/javascript"> $(document).ready(function(){ $("div.roundbox").wrap(' <div class="roundedbox">'+ ' <div class="bd">'+ ' <div class="c">'+ ' <div class="s">'+ ' </div>'+ ' </div>'+ ' </div>'+ '</div>'); }); </script>

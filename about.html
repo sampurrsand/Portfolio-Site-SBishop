@@ -18,7 +18,7 @@
     <header id="quicknav">
       <div class="container">
         <div class="navtoggle" id="myNavToggle">
-          <img src="img/SBishop.svg" alt="Logo Signature" class="logo">
+          <a href="index.html"><img src="img/SBishop.svg" alt="Logo Signature" class="logo"></a>
           <nav>
               <ul class="navigation">
                 <li><a href="index.html">Work</a></li>
@@ -41,44 +41,44 @@
 
 
       <!--About-->
-      <div id="hero" class="fade center">
-        <div class="container row">
-        <div id="about" class="container">
+        <div id="about" class="row container">
 
             <h1>About Me</h1>
 
 
       <!--begin hero section-->
-
+      <div id="picrow" class="row center">
+        <div class="container-pic center col-xs-1 col-lg-3 col-xl-3">
         <picture>
           <source srcset="img/Profile@0.5x.jpg" media="(max-width:767px)">
-          <img src="img/Profile@1x.jpg" alt="Profile Picture">
+          <img src="img/Profile@1x.jpg" alt="Profile Picture" id="profile-pic">
         </picture>
-
-
-        <div id="story" class="col-md-6 col-lg-7 col-xl-6"> <!--both columns-->
-        <div class="row">
-        <div><h2>My Story</h2></div>
+      </div>
 
 
 
-          <div> <!--STORY-->
-            <p>My name is Samantha, and I’m a UI designer based in Texas. I graduated from Southern Methodist University with a degree in management science. My background in optimization, project management, and engineering has given me the ability to understand many different perspectives and adapt my solutions accordingly. I started my career in software asset management, where I was largely focused on automating, improving, and designing processes using tools such as SQL and Visual Basic. After designing several PowerPoints for my team, I realized I wanted to pursue a creative field and stumbled upon UI design. </p>
-            <p>I enjoy every phase of the UX/UI process, but I love engaging with users the most. My favorite phases include user interviews, usability testing, and creating the visual language for my design. What I love most about being a UI designer with a development background is being able to create a visually pleasing product from the ground up. My goal is to specialize in responsive design and front-end development.
+
+
+          <!--<h1>My Story</h1>-->
+          <div id="story" class="center row col-lg-9 col-xl-9"> <!--STORY-->
+
+            <p>My name is Samantha, and I’m a UI designer based in Texas. I graduated from Southern Methodist University with a degree in management science. My background in optimization, project management, and engineering has given me the ability to understand many different perspectives and adapt my solutions accordingly. I started my career in software asset management, where I was largely focused on automating, improving, and designing processes using tools such as SQL and Visual Basic. After designing several PowerPoints for my team, I realized I wanted to pursue a creative field because I loved the challenge of arranging content in a way that enhances user experience. After researching careers that had a balance of technical and creative skills, I learned about UI design, and the rest is history.</p>
+            <p>I enjoy every phase of the UX/UI process, but I love engaging with users the most because I love helping people and meeting their needs. My favorite phases include user interviews, usability testing, and creating the visual language for my design. What I love most about being a UI designer with a development background is being able to create a visually pleasing product from the ground up. I also like being able to wear many different hats so that I can see multiple perspectives of a problem before solving it.</p>
+            <p>When I'm not working on projects, you can find me hanging out with my family and pets, practicing modern calligraphy, or falling down Wikipedia rabbit holes.
             </p>
 
           </div>
 
-          <div><a href="SBishop Resume.pdf" target="_blank" class="button secondary">Download Resume</a></div>
 
-        </div>
       </div> <!--end row 1-->
 
-          <h2>Skills & Tools</h2>
+    </div>
 
-          <div id="skills">
-          <div class="row">
-            <div id="uiux" class="center col-xs-1 col-md-6 col-lg-5 col-xl-3">
+      <div id ="skills-and-tools" class="container center">
+          <h1>Skills & Tools</h1>
+
+          <div id="skills" class="row">
+            <div id="uiux" class="center col-xs-1 col-md-6 col-lg-6 col-xl-6">
             <h4>UI/UX Skills</h4>
             <ul>
               <li>Design thinking process</li>
@@ -97,7 +97,7 @@
             </ul>
           </div>
 
-          <div id="tools" class="center col-xs-1 col-md-6 col-lg-5 col-xl-3">
+          <div id="tools" class="center col-xs-1 col-md-6 col-lg-6 col-xl-6">
             <h4>Tools</h4>
             <ul>
               <li>Adobe XD</li>
@@ -108,10 +108,10 @@
               <li>Lucidchart</li>
             </ul>
           </div> <!--end tools-->
-        </div>
+
         </div> <!--end skills-->
   </div>
-</div>
+
 
 <footer id="contact">
   <div class="center">
@@ -120,7 +120,7 @@
   </div>
 
   <div>
-    <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button">Email Me</a></p>
+    <p>Interested in working together? I'd love to!<br> <a href="mailto:skallen@smu.edu" class="button secondary">Email Me</a></p>
   </div>
 
   <div class="row container">
