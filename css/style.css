@@ -5,7 +5,7 @@ Accent 1 (Greenish Teal): #3F796B
 Accent 2 (Orange): #77553E
 Accent 3 (Dark Teal): #385B60
 Primary (Teal): #1F6C74
-Primary (Black): #000000
+Primary (Black): #000
 Light cream: #FEFCF8
 
 Type:
@@ -13,10 +13,8 @@ Body: Quicksand 18px
 Header 1: Handlee 24px font-family: 'Handlee', cursive
 Header 2: Handlee 20px
 Signature and logo: Give You Glory 24px font-family: 'Give You Glory', cursive
-*/
 
-/*box width needs to go before the body selector*/
-
+box width needs to go before the body selector */
 * {
   box-sizing: border-box;
 }
@@ -24,18 +22,20 @@ Signature and logo: Give You Glory 24px font-family: 'Give You Glory', cursive
 body {
   background-color: #FEFCF8;
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #000000;
+  color: #000;
 }
 
-h1, h2 {
+h1,
+h2 {
   line-height: 1em;
   font-family: 'Give You Glory', cursive;
 }
 
-h3, h4 {
+h3,
+h4 {
   line-height: 1em;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
@@ -56,7 +56,7 @@ h3 {
 
 h4 {
   font-size: 1.1em;
-  margin:auto;
+  margin: auto;
 }
 
 img {
@@ -87,15 +87,10 @@ a:active {
   background-color: #FEFCF8;
   color: #77553E;
   font-weight: 600;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  border-style: solid;
-  border-color: #77553E;
+  padding: 2px 10px;
+  margin: 0;
+  border-radius: 16px;
   transition: 0.2s opacity;
-  /*font-family: 'Handlee', cursive;
-  text-transform: uppercase;*/
 }
 
 .button:visited {
@@ -107,70 +102,71 @@ a:active {
 .button:hover,
 .button:focus {
   color: #35796b;
-  border-style: solid;
-  border-color: #35796b;
-  opacity: 0.8;
+  opacity: 0.85;
   text-decoration: underline;
 }
 
 .button:active {
   color: #1F6C74;
-  border-style: solid;
-  border-color: #1F6C74;
 }
 
-.button.secondary {
+.button2 {
   background-color: #77553e;
   font-weight: 600;
-  color: #FBF7EE;
+  color: #FEFCF8;
   text-transform: uppercase;
   border: 2px solid #77553E;
   transition: 0.2s opacity;
+  padding: 8px;
 }
 
-.button.secondary:visited {
-  color: #FBF7EE;
+.button2:visited {
+  color: #FEFCF8;
   background-color: #385B60;
   border-style: solid;
   border-color: #385B60;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button2:hover,
+.button2:focus {
   background-color: #35796b;
-  color: #FBF7EE;
+  color: #FEFCF8;
   border-style: solid;
   border-color: #35796b;
   opacity: 0.8;
   text-decoration: underline;
 }
 
-.button.secondary:active {
+.button2:active {
   background-color: #1F6C74;
-  color: #FBF7EE;
+  color: #FEFCF8;
   border-style: solid;
   border-color: #1F6C74;
 }
 
 header {
-  background-color: #385b60;
+  background-color: #385B60;
   padding: 10px 0 4px;
   margin: 0;
-  /*text-align: center; removed to make sure logo shows up to the left*/
-  /*padding: auto;*/
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+
+  /* text-align: center; removed to make sure logo shows up to the left */
+
+  /* padding: auto; */
+
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
 }
 
 /* Layout Styling */
-
 .container {
-  padding: 0 15px; /*left and right padding*/
+  padding: 0 15px;
+
+  /* left and right padding */
 }
 
 .center {
-text-align: center;
+  text-align: center;
 }
 
 .left {
@@ -178,55 +174,67 @@ text-align: center;
 }
 
 .row {
-  margin: 25px 0; /*25px top and bottom, 0 left and right*/
+  margin: 25px 0;
+
+  /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #story .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #tools .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #hero .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #skills .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #about .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
 }
 
 #skills-and-tools .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
+}
+
+#title .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #hero h1 {
   text-align: center;
-} /*makes just the h1 in hero sections center*/
+}
 
-/*alternatively, can create a rule set with a selector for center and add the center class to any HTML elements you want centered*/
+/* makes just the h1 in hero sections center */
 
+/* alternatively, can create a rule set with a selector for center and add the center class to any HTML elements you want centered */
 #hero {
   background-color: #FEFCF8;
-  padding: 20px 0; /*add space to top and bottom of hero section to give its content some space*/
+  padding: 20px 0;
+
+  /* add space to top and bottom of hero section to give its content some space */
   display: inline-block;
-  width: 100%; /*recommended method that ensures margins of every element in hero will not affect elements outside of it - always add width of 100%*/
+  width: 100%;
+
+  /* recommended method that ensures margins of every element in hero will not affect elements outside of it - always add width of 100% */
   text-align: center;
 }
 
@@ -238,19 +246,24 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-} /*only selects unordered lists within the nav element to remove the bullets*/
+}
 
+/* only selects unordered lists within the nav element to remove the bullets */
 nav > ul > li > a {
-  padding: 0 15px; /*left and right padding*/
+  padding: 0 15px;
+
+  /* left and right padding */
   text-transform: uppercase;
   font-weight: 600;
   color: #FEFCF8;
-  /*font-family: 'Handlee', cursive;*/
-  /*choosing not to set a color here because I want nav links to inherit from a*/
+
+  /* font-family: 'Handlee', cursive; */
+
+  /* choosing not to set a color here because I want nav links to inherit from a */
 }
 
 nav > ul > li > a:visited {
-  color: #FFE1BE;
+  color: #D3E3E4;
 }
 
 nav > ul > li > a:hover,
@@ -264,12 +277,12 @@ nav > ul > li > a:active {
   color: #FBF7EE;
 }
 
+/* delete this to remove blank space under the logo and menu */
 
-/*delete this to remove blank space under the logo and menu*/
-/*nav {
+/* nav {
   display: inline-block;
   width: 100%;
-}*/
+} */
 
 main {
   padding-top: 56px;
@@ -282,7 +295,7 @@ main {
 #skills .row {
   text-align: center;
   border-bottom: unset;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 
 #uiux > ul > li {
@@ -298,10 +311,16 @@ main {
 }
 
 #tools ul {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
-#linkedin, #instagram, #behance {
+#userstory {
+  font-weight: 700;
+}
+
+#linkedin,
+#instagram,
+#behance {
   width: 50px;
   max-width: 100%;
   height: auto;
@@ -326,22 +345,19 @@ main {
   padding-bottom: 0;
 }
 
-
-
-/*not having this will make elements overlap*/
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
 }
 
 .cat {
-  width:100%;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-/*display all elements except the last one*/
+/* display all elements except the last one */
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -350,8 +366,9 @@ main {
   padding: 0 0 10px;
 }
 
-/*the .responsive is for javascript later*/
-.navtoggle, .navtoggle.responsive {
+/* the .responsive is for javascript later */
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -362,8 +379,7 @@ main {
   padding-right: 0;
 }
 
-
-/*this will override the previous code and show the complete menu*/
+/* this will override the previous code and show the complete menu */
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -378,7 +394,8 @@ a.icon {
   padding: 0;
 }
 
-.logo, #menuIcon {
+.logo,
+#menuIcon {
   vertical-align: middle;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -391,309 +408,366 @@ a.icon {
 }
 
 .fadeIn {
-  opacity:0;
+  opacity: 0;
 }
 
-
-    @media only screen and (min-width: 640px) {
-      /*tells browser that when screen is 640px and above it needs to use this styling*/
-      header {
-        text-align: unset;
-        padding: 20px 0 13px;
-      }
-
-      nav {
-        width: auto; /*won't take up full screen, only as wide as its content*/
-        float: right; /*this ensures that nav floats to the right of the logo*/
-        margin-top: 4px;
-      }
-
-      body {
-        font-size: 18px;
-        /*the font size for headers will update automatically bc of em values*/
-      }
-
-      #hero span {
-        display: block;
-      }
-
-      #story .row {
-        border-bottom: unset;
-        padding: 0;
-      }
-
-      .col-md-6 {
-        width: 50%;
-      }
-
-      .logo {
-        max-width: 250px;
-
-      }
-
-      nav > ul > li {
-        display: inline-block;
-      } /*this makes the list items show up next to each other; we moved it here because we don't want small screens to have these show up side by side*/
-
-      .navtoggle li:not(:last-child) {
-        display: inline-block;
-      }
-
-      .navtoggle li:last-child {
-        display: none;
-      }
-
-      nav > ul {
-        list-style-type: none;
-        /*padding: 0;*/
-        margin: 1em 0; /*still want margins*/
-      }
-
-      .logo, nav {
-        vertical-align: middle;
-      }
-
-      main {
-        padding-top: 96px;
-      }
-
-      #story, p {
-        margin-top: 0;
-      }
-
-      .container-pic {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #profile-pic {
-        max-width: 600px;
-        height: auto;
-      }
-
-
-    }
-
-    @media only screen and (min-width: 1024px) {
-
-      header {
-        text-align: unset;
-        padding: 20px 0 13px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-      }
-
-      .col-lg-3 {
-        width: 25%;
-        float: left;
-      }
-
-      .col-lg-9 {
-        width: 75%;
-        float: left;
-      }
-
-      .col-lg-7 {
-        width: 60%;
-        float: left;
-      }
-
-      .col-lg-5 {
-        width: 40%;
-        float: left;
-      }
-
-      .col-lg-6 {
-        width: 50%;
-        float: left;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .container-pic {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #contact .container {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #story .row {
-        border-bottom: unset;
-        padding-bottom: 0px;
-      }
-
-      #skills .row {
-        border-bottom: unset;
-        padding-bottom: 0px;
-      }
-
-      #tools .row {
-        border-bottom: unset;
-        padding-bottom: 0px;
-      }
-
-      body {
-        font-size: 18px;
-      }
-
-      .row {
-        margin-bottom: 0px;
-      }
-
-      .logo {
-        max-width: 250px;
-      }
-
-      nav > ul > li {
-        display: inline-block;
-      } /*this makes the list items show up next to each other*/
-
-      .navtoggle li:not(:last-child) {
-        display: inline-block;
-      }
-
-      .navtoggle li:last-child {
-        display: none;
-      }
-
-      nav > ul {
-        list-style-type: none;
-        /*padding: 0;*/
-        margin: 1em 0; /*still want margins*/
-      }
-
-      .logo, nav {
-        vertical-align: middle;
-      }
-
-      main {
-        padding-top: 96px;
-      }
-
-      #story {
-        margin: auto;
-      }
-
-    }
-
-    @media only screen and (min-width: 1441px) {
-
-      header {
-        text-align: unset;
-        padding: 20px 0 13px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-      }
-
-      .col-xl-3 {
-        width: 25%;
-        float: left;
-      }
-
-      .col-xl-9 {
-        width: 75%;
-        float: left;
-      }
-
-      .col-xl-7 {
-        width: 60%;
-      float: left;
-      }
-
-      .col-xl-5 {
-        width: 40%
-        float: left;
-      }
-
-      .col-xl-6 {
-        width: 50%;
-        float: left;
-      }
-
-      .container {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .container-pic {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #contact .container {
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #story .row {
-        border-bottom: unset;
-        padding-bottom: 0px;
-      }
-
-      #skills .row {
-        border-bottom: unset;
-        padding-bottom: 0px;
-      }
-
-      #tools .row {
-        border-bottom: unset;
-        padding-bottom: 0px;
-      }
-
-      body {
-        font-size: 18px;
-      }
-
-      .row {
-        margin-bottom: 0px;
-      }
-
-      .logo {
-        max-width: 250px;
-      }
-
-      nav > ul > li {
-        display: inline-block;
-      } /*this makes the list items show up next to each other*/
-
-
-      .navtoggle li:not(:last-child) {
-        display: inline-block;
-      }
-
-      .navtoggle li:last-child {
-        display: none;
-      }
-
-      nav > ul {
-        list-style-type: none;
-        /*padding: 0;*/
-        margin: 1em 0; /*still want margins*/
-      }
-
-      main {
-        padding-top: 96px;
-      }
-
-    }
+#wireframes .row {
+  border-bottom: unset;
+  padding: 0;
+}
+
+#design .row {
+  border-bottom: unset;
+  padding: 0;
+}
+
+#iterate .row {
+  border-bottom: unset;
+  padding: 0;
+}
+
+#pref .row {
+  border-bottom: unset;
+  padding: 0;
+}
+
+#conclusion .row {
+  border-bottom: unset;
+  padding: 0;
+}
+
+@media only screen and (min-width: 771px) {
+  /* tells browser that when screen is 640px and above it needs to use this styling */
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto; /* won't take up full screen, only as wide as its content */
+    float: right; /* this ensures that nav floats to the right of the logo */
+    margin-top: 4px;
+  }
+
+  body {
+    font-size: 18px; /* the font size for headers will update automatically bc of em values */
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #story .row {
+    border-bottom: unset;
+    padding: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  /* this makes the list items show up next to each other; we moved it here because we don't want small screens to have these show up side by side */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    list-style-type: none;
+
+    /* padding: 0; */
+    margin: 1em 0;
+
+    /* still want margins */
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #story,
+  p {
+    margin-top: 0;
+  }
+
+  .container-pic {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #profile-pic {
+    max-width: 600px;
+    height: auto;
+  }
+
+  #userstory {
+    font-weight: 700;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .col-lg-1 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+    float: left;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-pic {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #story .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  #skills .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  #tools .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  /* this makes the list items show up next to each other */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    list-style-type: none;
+
+    /* padding: 0; */
+    margin: 1em 0;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #story {
+    margin: auto;
+  }
+
+  #picrow {
+    display: flex;
+    align-items: center;
+  }
+
+  #userstory {
+    font-weight: 700;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .col-xl-7 {
+    width: 60%;
+    float: left;
+  }
+
+  .col-xl-5 {
+    width: 40%;
+    float: left;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-pic {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #style .container,
+  #iterate .container,
+  #design .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #story .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  #skills .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  #tools .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  /* this makes the list items show up next to each other */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    list-style-type: none;
+
+    /* padding: 0; */
+    margin: 1em 0;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #userstory {
+    font-weight: 700;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
 
 [class*="col-"] {
-  float:left; /*columns show up next to each other*/
+  float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
