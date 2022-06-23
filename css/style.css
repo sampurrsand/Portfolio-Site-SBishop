@@ -241,6 +241,7 @@ header {
 .logo {
   max-width: 150px;
   max-height: 48px;
+  width: auto;
 }
 
 nav > ul {
@@ -470,6 +471,7 @@ a.icon {
   .logo {
     max-width: 250px;
     max-height: 64px;
+    width: auto;
   }
 
   nav > ul > li {
@@ -605,6 +607,8 @@ a.icon {
 
   .logo {
     max-width: 250px;
+    max-height: 64px;
+    width: auto;
   }
 
   nav > ul > li {
@@ -734,6 +738,7 @@ a.icon {
   .logo {
     max-width: 250px;
     max-height: 64px;
+    width: auto;
   }
 
   nav > ul > li {
