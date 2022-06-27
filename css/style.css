@@ -66,6 +66,7 @@ img {
 a {
   color: #77553E;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:visited {
@@ -276,7 +277,7 @@ nav > ul > li > a:focus {
 }
 
 nav > ul > li > a:active {
-  color: #FBF7EE;
+  color: #FFE1BE;
 }
 
 /* delete this to remove blank space under the logo and menu */
@@ -439,7 +440,7 @@ a.icon {
 }
 
 @media only screen and (min-width: 771px) {
-  /* tells browser that when screen is 640px and above it needs to use this styling */
+  /* tells browser that when screen is 771px and above it needs to use this styling */
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -452,7 +453,7 @@ a.icon {
   }
 
   body {
-    font-size: 18px; /* the font size for headers will update automatically bc of em values */
+    font-size: 16px; /* the font size for headers will update automatically bc of em values */
   }
 
   #hero span {
